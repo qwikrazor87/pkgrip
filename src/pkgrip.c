@@ -7,7 +7,7 @@
 #include "libkirk/amctrl.h"
 #include "libkirk/kirk_engine.h"
 
-#define PKGRIP_VERSION "1.0"
+#define PKGRIP_VERSION "1.1"
 
 /* NOTE: only supports files under 4GB */
 
@@ -275,11 +275,9 @@ void extract_pkg(const char *file)
 	AES_set_key(&ctx, pkg_key, AES_KEY_LEN_128);
 
 	sprintf(path, "./%s_dec", title_id);
-#ifdef __linux__
+
 	mkdir(path, 0777);
-#else
-	mkdir(path);
-#endif
+
 
 	FILE *fd = fopen(file, "rb");
 	fseek(fd, pkg_enc_start, 0);
@@ -401,11 +399,7 @@ void extract_pkg(const char *file)
 				extracted++;
 			}
 		} else {
-#ifdef __linux__
 			mkdir(path, 0777);
-#else
-			mkdir(path);
-#endif
 		}
 
 		free(pkg_file_name);
