@@ -5,7 +5,7 @@ pkgrip by qwikrazor87
 <br/>
 Modified by tachicola
 
-<strong>Note from TachiCola:</strong>
+## Note from TachiCola
 
 I have modified pkgrip.c to have a larger file size limit.
 The pkg size limit pointer has increased from a 32-bit uint.
@@ -19,7 +19,7 @@ to 16 GB in size.
 
 I hope you find it useful!
 
-<strong>Original README:</strong>
+## Original README
 
 This is a PC app to decrypt PSP/PS3 pkgs.
 It has support for extracting PS1 KEYS.BIN and decrypting PTF themes.
