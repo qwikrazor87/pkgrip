@@ -1,5 +1,5 @@
 # pkgrip
-Fast linux alternative for decrypting PS3/PSP pkgs.
+Fast alternative for decrypting PS3/PSP pkgs.
 
 Created by qwikrazor87
 <br/>
