@@ -9,7 +9,7 @@
 
 #define PKGRIP_VERSION "1.1"
 
-/* NOTE: only supports files under 4GB */
+/* NOTE: Supports files up to 16 GB */
 
 typedef unsigned char u8;
 typedef unsigned short u16;
@@ -226,7 +226,7 @@ void check_pkg_size(const char *file) {
 
     if (tou64(buf))
         usage(
-            "PKG size too large, must be less than 4GB (4294967296 bytes)!\n");
+            "PKG size too large, must be less than 16 GB!\n");
 }
 
 void get_pkg_info(const char *file) {
