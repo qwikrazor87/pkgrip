@@ -13,9 +13,9 @@ to a 64-bit uint. The extraction progress readout has been
 updated to match. It's not pretty in the slightest, but it
 can now handle files larger than 4 GB with no fuss.
 
-I have not tested the effects of this change in depth. All I
-know is that it works for its intended purpose with files up
-to 16 GB in size.
+I have not fully tested the effects of this change in depth.
+All I know is that it works for its intended purpose with
+files up to 16 GB in size.
 
 I hope you find it useful!
 
