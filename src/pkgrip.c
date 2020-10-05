@@ -7,7 +7,7 @@
 #include "libkirk/amctrl.h"
 #include "libkirk/kirk_engine.h"
 
-#define PKGRIP_VERSION "1.1"
+#define PKGRIP_VERSION "1.1a"
 
 /* NOTE: Supports files up to 16 GB */
 
@@ -225,8 +225,7 @@ void check_pkg_size(const char *file) {
               size, tou64(buf));
 
     if (tou64(buf))
-        usage(
-            "PKG size too large, must be less than 16 GB!\n");
+        usage("PKG size too large, must be less than 16 GB!\n");
 }
 
 void get_pkg_info(const char *file) {
@@ -454,8 +453,8 @@ void free_mallocs() {
 }
 
 int main(int argc, char **argv) {
-    printf("=================\n== pkgrip v%s == <by "
-           "qwikrazor87>\n=================\n\n",
+    printf("=================\n== pkgrip v%s\n== Created by "
+           "qwikrazor87\n== Modified by TachiCola\n=================\n\n",
            PKGRIP_VERSION);
     exec = argv[0];
 
