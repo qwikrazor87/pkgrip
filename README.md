@@ -3,9 +3,9 @@ Fast alternative for decrypting PS3/PSP pkgs.
 
 Created by qwikrazor87
 <br/>
-Modified by TachiCola
+Modified by Mishabitchi
 
-## Note from TachiCola
+## Note from Mishabitchi
 
 I have modified pkgrip.c to have a larger file size limit.
 The pkg size limit pointer has increased from a 32-bit uint.
