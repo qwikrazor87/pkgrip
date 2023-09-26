@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I./libkirk
+CFLAGS = -Wall -Wextra -I./libkirk
 
 CFLAGS+=-O2
 
