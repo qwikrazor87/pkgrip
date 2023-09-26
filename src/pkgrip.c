@@ -319,6 +319,8 @@ void extract_pkg(const char *file)
 			iter128(public_key);
 		}
 
+		pkg_file_name[namelength] = 0x0;
+
 		sprintf(path, "%s_dec/%s", title_id, pkg_file_name);
 		char tmpstr[21];
 		sprintf(tmpstr, "Extracting %s file:", ((pkg_entry_type[i] >> 24) == 0x90) ? "PSP" : "PS3");
